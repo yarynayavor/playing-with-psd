@@ -3,76 +3,100 @@
 <head>
 	<title>Practice(green design)</title>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<div class="wrapper">
-		<h1>Green design</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a><span>/</span></li> 
-					<li><a href="#">About </a><span>/</span></li>
-					<li><a href="#">Portfolio </a><span>/</span></li>
-					<li><a href="#">Clients </a><span>/</span></li>
-					<li><a href="#">Contacts </a></li>
-				</ul>
+		<div class="container">
+			<div class="row">
+			<div class="logo col-4"></div>
+				<nav class="col-8">
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+							<span class="nav justify-content-end">/</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+							<span class="nav justify-content-end">/</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Portfolio</a>
+							<span class="nav justify-content-end">/</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Clients</a>
+							<span class="nav justify-content-end">/</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contacts</a>
+						</li>
+					</ul>
 			</nav>
 		</div>
-		
-	</header>
-
-	<div class="banner">
-		<div class="wrapper">
-			<h1>WE KNOW WEB DESIGN</h1>
-			<p>With over 15 years experience you can be sure your website is in safe hands</p>
-			<a href="#">VIEW OUR WORK</a>
-		</div>
 	</div>
-	<div class="main">
-		<div class="wrapper">
-			<section id="sales">
-				<ul>
-					<li>
-						<h3>Web Design</h3>
-						<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
-					</li>
-					<li>
-						<h3>E-commerce</h3>
-						<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
-					</li>
-					<li>
-						<h3>SEO</h3>
-						<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
-					</li>
-				</ul>
-			</section>
-			<section id="whatclientssay">
-				<h2>WHAT OUR CLIENTS SAY</h2>
-				<blockquote>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et l</blockquote>
-			</section>
-			<section id="dropusaline">
-				<h2>DROP US A LINE</h2>
-				<ul>
-					<li>555-268-001</li>
-					<li>hello@...com</li>
-					<li>
-						<span>Leaf Studios</span>
-						<span>Times Square</span>
-						<span>NY</span>
-					</li>
-				</ul>
+</header>
 
-				<ul>
-					<li><a href="#">facebook</a></li>
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">pinterest</a></li>
-					<li><a href="#">linked-in</a></li>
-				</ul>
-
-			</section>
-		</div>
+<div class="banner">
+	<div class="container">
+		<h1 class="banner-header">We know web design</h1>
+		<p>With over 15 years experience you can be sure your website is in safe hands</p>
+		<a class="btn btn-success" href="#">view our work</a>
 	</div>
+</div>
+<div class="main">
+	<div class="container clearfix">
+		<section id="sales">
+		<div class="row">
+			<ul>
+				<li class="col-3">
+				    <img src="images/cs-1.png" alt="cs-1">
+					<h3>Web Design</h3>
+					<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+				</li>
+				<li class="col-3">
+					<img src="images/cs-2.png" alt="cs-2">
+					<h3>E-commerce</h3>
+					<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+				</li>
+				<li class="col-3">
+					<img src="images/cs-3.png" alt="cs-3">
+					<h3>SEO</h3>
+					<p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+				</li>
+			</ul>
+		</div>
+		</section>
+		<section id="whatclientssay" class="clearfix">
+			<h2>WHAT OUR CLIENTS SAY</h2>
+			<img src="images/client.png" alt="client">
+			<blockquote>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et l</blockquote>
+		</section>
+		<section id="dropusaline">
+			<h2>DROP US A LINE</h2>
+			<ul>
+				<li>555-268-001</li>
+				<li>hello@...com</li>
+				<li>
+					<span>Leaf Studios</span>
+					<span>Times Square</span>
+					<span>NY</span>
+				</li>
+			</ul>
 
-	
+			<ul>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">pinterest</a></li>
+				<li><a href="#">linked-in</a></li>
+			</ul>
+
+		</section>
+	</div>
+</div>
+
+
 </body>
 </html>
